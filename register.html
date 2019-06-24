@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <meta charset="UTF-8">
+        <title>Petsitters</title>
+    </head>
+    <body>
+        <h1>Subscribe</h1>
+        <nav> <!-- navigation menu -->
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="register.html">Subscribe</a></li>
+            </ul>
+        </nav>
+        <!-- subscription form -- two inputs and a button -->
+        <div>
+            <form onsubmit="return checkLength();">
+                <div class="container">
+                    <label><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email Address" name="email" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label><b>Home Address</b></label>
+                    <input type="text" placeholder="Enter Home Address" name="addy" required>
+
+                    <label><b>Credit Card Number</b></label>
+                    <input id="ccd" type="number" placeholder="Enter Credit Card Number" name="ccd" maxlength="16" minlength="16" required>
+
+                    <button type="submit">Subscribe</button>
+                    <p id="valid"></p> <!-- will print whether submission is successful or not -->
+                </div>
+            </form>
+        </div>
+        <script>
+            /* function checks that the length of credit card number input is 16 digits */
+            function checkLength() {
+                var len = document.getElementById("ccd").value.length; /* get input */
+                var txt;
+                if(len === 16){
+                    txt = "Successful Subscription";
+                    document.getElementById("valid").innerHTML = txt;
+                    return true; /* if 16 digits allow submission */
+                }
+                else{
+                    txt = "Invalid Credit Card number. Must be 16 digits";
+                    document.getElementById("valid").innerHTML = txt;
+                    return false; /* if not 16 digits don't allow submission */
+                }
+            }
+        </script>
+    </body>
+</html>

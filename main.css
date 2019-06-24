@@ -1,0 +1,143 @@
+body {
+    color: #fff;
+    background: #0B172A; /* background color navy blue ish */
+    font: 20px "Raleway", Geneva, Helvetica, sans-serif;
+}
+
+header{
+    padding: 0;
+}
+
+header p{
+    text-align: center;
+}
+
+h1{
+    font-family: cursive;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    color:#BC4123; /*headings are orange */
+}
+p{
+    text-align: center;
+}
+
+.space{
+    line-height: 1.6; /* increase line height between*/
+}
+
+/*Nav*/
+nav {
+    width: 100%;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+nav li {
+    margin: 10px 20px 0 20px;
+    padding: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    background: none;
+    width: 10%;
+    text-align: left;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    font-style: italic;
+    border-bottom: 2px solid #BC4123;
+}
+
+/*content*/
+.container{
+    width: 60%;
+    margin: 0 auto 0 auto;
+    padding: 0 10%;
+}
+
+.startSec{
+    padding: 15% 0 5% 0;
+}
+
+.midSec{
+    padding: 15% 0 15% 0;
+}
+
+.endSec{
+    padding: 15% 0 15% 0;
+}
+
+#list1{
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+#list2{
+    width: 60%;
+    margin: 0 auto 0 auto;
+}
+
+/*Table layout*/
+table{
+    width: 70%;
+    margin: 0 auto 0 auto;
+    padding: 0 10%;
+}
+
+table, th, td{
+    padding-bottom: 20px;
+}
+
+th{
+    text-align: right;
+}
+
+td{
+    padding-left: 10px;
+}
+
+/*map*/
+iframe{
+    margin: 0 auto 0 15%;
+    padding: 20px 0 10px;
+
+}
+
+/*form*/
+input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #BC4123;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
